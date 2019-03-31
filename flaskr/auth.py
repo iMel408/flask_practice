@@ -91,7 +91,7 @@ def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
-            return redirect(url_for('auth.login'))
+            return redirect(url_for('auth.login'))  # makes it so that blog.index and index endpoints both work
 
         else:
             return view(**kwargs)

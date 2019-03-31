@@ -2,10 +2,10 @@
 
 {% block header %}
 
-    <h1>{% block title %}Register{% endblock}</h1>
+    <h1>{% block title %}Register{% endblock %}</h1>
 {% endblock %}
 
-{%clovk content %}
+{% block content %}
     <form method="POST">
         <label for="username">Username</label>
         <input name="username" id="username" required>
