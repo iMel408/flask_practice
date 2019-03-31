@@ -1,0 +1,6 @@
+.idea/
+env/
+instance/
+*.pyc
+flaskr/compare.py
+flaskr/scratchpad.py
